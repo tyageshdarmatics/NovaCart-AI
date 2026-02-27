@@ -1,0 +1,17 @@
+{
+  "name": "nova-cart-ai",
+  "version": "1.0.0",
+  "description": "NovaCart AI - Comprehensive E-commerce Personalization & Revenue Optimization Engine",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "dev:all": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "server": "npm start --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "client": "npm run build --prefix client && npm start --prefix client",
+    "dev:client": "npm run dev --prefix client",
+    "install:all": "npm install --prefix server && npm install --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

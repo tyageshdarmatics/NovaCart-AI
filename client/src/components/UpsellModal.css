@@ -1,0 +1,118 @@
+.upsell-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.upsell-modal {
+    background-color: var(--surface);
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-up {
+    animation: slideInUp var(--transition-normal) forwards;
+}
+
+.upsell-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--surface-alt);
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: all var(--transition-fast);
+}
+
+.upsell-close:hover {
+    background: var(--border);
+    color: var(--text-main);
+}
+
+.upsell-header {
+    padding: 2.5rem 2rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(79, 70, 229, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.upsell-icon {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.upsell-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.upsell-header p {
+    color: var(--text-muted);
+}
+
+.upsell-product {
+    padding: 0 2rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.upsell-product img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+}
+
+.upsell-details h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.upsell-price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.upsell-actions {
+    padding: 1.5rem 2rem;
+    background-color: var(--surface-alt);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.upsell-actions .btn {
+    width: 100%;
+}

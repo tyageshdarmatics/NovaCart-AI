@@ -1,0 +1,60 @@
+.ctl-widget {
+    margin-top: 2rem;
+}
+
+.ctl-widget h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.ctl-subtitle {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.ctl-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.ctl-card {
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    transition: transform var(--transition-fast);
+}
+
+.ctl-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.ctl-card img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.ctl-info h4 {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ctl-info p {
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.ctl-add-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+}

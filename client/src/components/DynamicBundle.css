@@ -1,0 +1,133 @@
+.widget {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.bundle-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.bundle-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.bundle-header p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.bundle-progress {
+    display: inline-block;
+    background-color: var(--surface-alt);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.bundle-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.bundle-product-card {
+    border: 2px solid var(--border);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: all var(--transition-fast);
+}
+
+.bundle-product-card:hover {
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.bundle-product-card.selected {
+    border-color: var(--primary);
+    background-color: rgba(79, 70, 229, 0.05);
+    /* slightly tinted primary */
+}
+
+.bundle-product-card img {
+    width: 100%;
+    border-radius: 0.25rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.bp-info {
+    text-align: center;
+}
+
+.bp-info h4 {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.bp-info p {
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.selection-indicator {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+}
+
+.bundle-product-card.selected .selection-indicator {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.bundle-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.bundle-summary {
+    font-weight: 600;
+}
+
+.b-price-discounted {
+    font-size: 1.25rem;
+    color: var(--success);
+    margin-right: 0.5rem;
+}
+
+.b-price-original {
+    color: var(--text-muted);
+    text-decoration: line-through;
+}
+
+.bundle-footer button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}

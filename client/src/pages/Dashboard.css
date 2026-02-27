@@ -1,0 +1,90 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.dashboard-header {
+    margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+    font-size: 1.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.dashboard-header p {
+    color: var(--text-muted);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.metric-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.metric-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.metric-top h4 {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.metric-icon {
+    color: var(--primary);
+    background: rgba(79, 70, 229, 0.1);
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.dashboard-section {
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.dashboard-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.ab-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ab-table th,
+.ab-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.ab-table th {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.ab-table tr:last-child td {
+    border-bottom: none;
+}
